@@ -77,7 +77,7 @@ def render_code(code, out_dir):
 '''
     sub_dir = os.path.join(out_dir, str(len(code)))
     os.makedirs(sub_dir, exist_ok=True)
-    out_path = os.path.join(sub_dir, f'WML_language_icon_{code}.svg')
+    out_path = os.path.join(sub_dir, f'WCL_language_icon_{code}.svg')
     with open(out_path, 'w') as fo:
         fo.write(svg)
     return out_path
